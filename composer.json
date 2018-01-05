@@ -1,0 +1,19 @@
+{
+  "name": "bartosz-maciaszek/trix-bundle",
+  "type": "symfony-bundle",
+  "description": "Provides a Trix integration for your Symfony project.",
+  "keywords": ["trix"],
+  "license": "MIT",
+  "authors": [
+    { "name": "Bartosz Maciaszek", "email": "bartosz@maciaszek.name"}
+  ],
+  "require": {
+    "php": "^7.0",
+    "symfony/dependency-injection": "^4.0",
+    "symfony/form": "^4.0",
+    "symfony/framework-bundle": "^4.0"
+  },
+  "autoload": {
+    "psr-4": { "BM\\TrixBundle\\": "./src" }
+  }
+}

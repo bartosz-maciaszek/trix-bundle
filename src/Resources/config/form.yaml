@@ -1,0 +1,5 @@
+services:
+    trix.form.type:
+        class: BM\TrixBundle\Type\TrixType
+    tags:
+        - { name: form.type }
