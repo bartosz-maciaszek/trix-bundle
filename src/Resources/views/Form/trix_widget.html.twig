@@ -1,2 +1,4 @@
-<input id="trix-editor-input" value="{{ value }}" type="hidden" name="content">
-<trix-editor input="trix-editor-input"></trix-editor>
+{% block trix_widget %}
+    <input id="trix-editor-input" value="{{ value }}" type="hidden" name="content">
+    <trix-editor input="trix-editor-input"></trix-editor>
+{% endblock %}

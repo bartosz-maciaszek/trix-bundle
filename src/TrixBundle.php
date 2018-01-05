@@ -1,6 +1,8 @@
 <?php
 namespace BM\TrixBundle;
 
+use BM\TrixBundle\DependencyInjection\Compiler\ResourceCompilerPass;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
@@ -8,5 +10,8 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 class TrixBundle extends Bundle
 {
-
+    public function build(ContainerBuilder $container)
+    {
+        $container->addCompilerPass(new ResourceCompilerPass());
+    }
 }
