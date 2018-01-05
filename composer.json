@@ -11,8 +11,7 @@
     "php": "^7.0",
     "symfony/dependency-injection": "^4.0",
     "symfony/form": "^4.0",
-    "symfony/framework-bundle": "^4.0",
-    "bartosz-maciaszek/trix-bundle": "^0.0.1"
+    "symfony/framework-bundle": "^4.0"
   },
   "autoload": {
     "psr-4": { "BM\\TrixBundle\\": "./src" }
