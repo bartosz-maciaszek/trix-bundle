@@ -2,6 +2,7 @@
 namespace BM\TrixBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\Form\FormView;
 
@@ -53,5 +54,13 @@ class TrixType extends AbstractType
     {
         $view->vars['trixId'] = $this->id;
         $view->vars['enabled'] = $this->enabled;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getParent()
+    {
+        return TextareaType::class;
     }
 }
