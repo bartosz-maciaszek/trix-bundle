@@ -4,6 +4,9 @@ namespace BM\TrixBundle\DependencyInjection\Compiler;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
+/**
+ * @author Bartosz Maciaszek <bartosz@maciaszek.name>
+ */
 class ResourceCompilerPass implements CompilerPassInterface
 {
     public function process(ContainerBuilder $container)

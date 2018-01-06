@@ -10,6 +10,9 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 class TrixBundle extends Bundle
 {
+    /**
+     * @param ContainerBuilder $container
+     */
     public function build(ContainerBuilder $container)
     {
         $container->addCompilerPass(new ResourceCompilerPass());
